@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* Temporary Email Checker
+
+Written by: toxiicdev.net
+Language: C#
+
+*/
+
+using System;
 using System.IO;
 using System.Net;
 
