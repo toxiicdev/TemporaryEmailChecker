@@ -7,3 +7,7 @@ This is a simple folder with samples for using my service TemporaryEmailChecker 
 If you are interested to get a better way to check temporay emails with a higher performance and capibility,
 
 you can contact me at: admin@toxiicdev.net
+
+# Donation
+
+BTC Address: 1JWVN1d9MJGUMTcqd2dDd5KWuhw7GsMGSe
