@@ -1,6 +1,6 @@
 # Temporary Email Checker
 
-This is a simple folder with samples for using my service TemporaryEmailChecker with various language
+This is a simple folder with samples for using my service TemporaryEmailChecker with various programming languages
 
 # Business
 
