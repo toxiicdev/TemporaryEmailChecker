@@ -13,21 +13,18 @@ if(isset($_POST['email']))
 {
 	$responseCode = TMC::IsDisposableEmail($_POST['email']);
 	
+	$result = "Email is invalid";
+	
 	switch($responseCode)
 	{
 		case TMCResponseCodes::NotDisposable:
 		{
-			echo "Email is not disposable";
+			$result = "Email is not disposable";
 			break;
 		}
 		case TMCResponseCodes::Disposable:
 		{
-			echo "Email is disposable";
-			break;
-		}
-		default:
-		{
-			echo "Email is valid";
+			$result = "Email is disposable";
 			break;
 		}
 	}
@@ -42,6 +39,7 @@ if(isset($_POST['email']))
 
 	<body style="margin-top: 20%">
 		<center>
+			<?php if(isset($result)) echo $result . "<br/>"; ?>
 			<form method="POST">
 				<input type="email" name="email" id="email" placeholder="Insert your email here" />
 				<button type="submti">Check</button>
