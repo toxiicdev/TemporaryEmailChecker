@@ -23,14 +23,15 @@ class TMC
 			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 			$output = curl_exec($ch);
 			
-			if(!curl_errno($ch)) // If all went fine
-			{
-				$json = json_decode($output);
-				curl_close($ch);
-				return $json -> result_code;
-			}
+			$curl_errno = curl_errno($ch);
 			
 			curl_close($ch);
+			
+			if(!$curl_errno) // If all went fine
+			{
+				$json = json_decode($output);
+				return $json -> result_code;
+			}
 		}
 		
 		return TMCResponseCodes::Invalid;
