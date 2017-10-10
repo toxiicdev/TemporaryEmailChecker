@@ -26,6 +26,7 @@ class TMC
 			if(!curl_errno($ch)) // If all went fine
 			{
 				$json = json_decode($output);
+				curl_close($ch);
 				return $json -> result_code;
 			}
 			
