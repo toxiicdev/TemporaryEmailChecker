@@ -2,6 +2,8 @@
 
 This is a simple folder with samples for using my service TemporaryEmailChecker with various programming languages
 
+Limitation: Max 10 checks / min for free API
+
 # Business
 
 If you are interested to get a better way to check temporay emails with a higher performance and capibility
