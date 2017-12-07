@@ -2,7 +2,7 @@
 
 This is a simple folder with samples for using my service TemporaryEmailChecker with various programming languages
 
-Limitation: Max 10 checks / min for free API
+Limitation: Max 5 checks / min for free API
 
 # Business
 
